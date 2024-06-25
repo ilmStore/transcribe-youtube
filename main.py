@@ -56,7 +56,7 @@ def download_video (videoURL):
 
 def ilmstore_transcriber (videoPath, pipe):
     print ("Starting transcribing now")
-    result = pipe(VideoPath)
+    result = pipe(videoPath)
     print ("Transcription Done")
     return result
     
