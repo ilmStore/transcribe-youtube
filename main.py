@@ -55,9 +55,12 @@ def download_video (videoURL):
     return VideoPath
 
 def ilmstore_transcriber (videoPath, pipe):
+    import textwrap
     print ("Starting transcribing now")
     result = pipe(videoPath)
     print ("Transcription Done")
+    wrapped_text = textwrap.fill(result["text"], width=80)
+    print(wrapped_text)
     return result
     
 
