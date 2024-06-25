@@ -45,6 +45,7 @@ def ilmstore_youtube_transcribe():
     return pipe
 
 def download_video (videoURL):
+    import pytube
     print ("Downloading YouTube Video")
     data = pytube.YouTube(videoURL)
     # Convert to audio file
