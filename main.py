@@ -53,7 +53,7 @@ def download_video (videoURL):
     print ("Download Complete YouTube Video")
     return VideoPath
 
-def ilmstore_transcriber (videoPath, pipe)
+def ilmstore_transcriber (videoPath, pipe):
     print ("Starting transcribing now")
     result = pipe(VideoPath)
     print ("Transcription Done")
