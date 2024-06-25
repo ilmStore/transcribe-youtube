@@ -1,1 +1,3 @@
+def main()
+  print("Salam")
 
